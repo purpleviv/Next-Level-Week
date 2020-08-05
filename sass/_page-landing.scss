@@ -30,25 +30,27 @@
   width: 100%; /* tamanho que se refere à tag pai : container */
 }
 
-//botoes
+/* Botoes */
 .buttons-container {
+  margin: 3.2rem 0;
+
   display: flex;
   justify-content: center;
-  margin: 3.2rem 0;
 }
 
 .buttons-container a {
-  align-items: center;
   border-radius: 0.8rem;
   color: $color-button-text;
-  display: flex;
-  height: 10.4rem;
-  justify-content: center;
-  margin-right: 1.6rem;
   font: 700 2.4rem Archivo;
+  height: 10.4rem;
+  margin-right: 1.6rem;
   text-decoration: none;
   transition: background 0.2s;
   width: 30rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .buttons-container a img {
@@ -69,4 +71,17 @@
   &:hover {
     background-color: $color-secondary-dark;
   }
+}
+/* Fim do estilo dos botoes */
+
+.total-connections {
+  font-size: 1.8rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.total-connections img {
+  margin-left: 0.8rem;
 }

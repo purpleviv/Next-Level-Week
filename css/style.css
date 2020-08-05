@@ -78,35 +78,36 @@ textarea {
   /* tamanho que se refere à tag pai : container */
 }
 
+/* Botoes */
 .buttons-container {
+  margin: 3.2rem 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin: 3.2rem 0;
 }
 
 .buttons-container a {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   border-radius: 0.8rem;
   color: #ffffff;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  height: 10.4rem;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin-right: 1.6rem;
   font: 700 2.4rem Archivo;
+  height: 10.4rem;
+  margin-right: 1.6rem;
   text-decoration: none;
   -webkit-transition: background 0.2s;
   transition: background 0.2s;
   width: 30rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .buttons-container a img {
@@ -129,5 +130,23 @@ textarea {
 
 .buttons-container a.give-classes:hover {
   background-color: #04bf58;
+}
+
+/* Fim do estilo dos botoes */
+.total-connections {
+  font-size: 1.8rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.total-connections img {
+  margin-left: 0.8rem;
 }
 /*# sourceMappingURL=style.css.map */
