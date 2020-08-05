@@ -45,8 +45,11 @@ textarea {
   max-width: 700px;
 }
 
-:root {
-  font-size: 40%;
+@media (min-width: 700px) {
+  :root {
+    font-size: 62.5%;
+    /* todo 1rem vai ser relativo a 10px */
+  }
 }
 
 #page-landing {
@@ -148,5 +151,65 @@ textarea {
 
 .total-connections img {
   margin-left: 0.8rem;
+}
+
+@media (max-width: 699px) {
+  :root {
+    font-size: 40%;
+  }
+}
+
+@media (min-width: 1100px) {
+  #page-landing #container {
+    max-width: 1100px;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 2fr 1fr 2fr;
+        grid-template-columns: 2fr 1fr 2fr;
+    -ms-grid-rows: 350px 1fr;
+        grid-template-rows: 350px 1fr;
+        grid-template-areas: "proffy image image" "button button texting";
+    -webkit-column-gap: 87px;
+            column-gap: 87px;
+    row-gap: 86px;
+  }
+  .logo-container {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    grid-area: proffy;
+    text-align: initial;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    margin: 0;
+  }
+  .logo-container img {
+    height: 127px;
+  }
+  .hero-image {
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 2;
+    grid-area: image;
+    height: 350px;
+  }
+  .buttons-container {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-area: button;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    margin: 0;
+  }
+  .total-connections {
+    -ms-grid-row: 2;
+    -ms-grid-column: 3;
+    grid-area: texting;
+    -ms-grid-column-align: end;
+        justify-self: end;
+    font-size: 1.2rem;
+  }
 }
 /*# sourceMappingURL=style.css.map */
