@@ -95,3 +95,19 @@
   padding: 0 1.6rem;
   width: 100%;
 }
+
+.input-block {
+  position: relative;
+}
+/* css cria o after quando o elemento estiver em foco */
+.input-block:focus-within::after {
+  content: "";
+  background-color: $color-primary-light;
+  height: 2px;
+  width: calc(100% - 3.2rem);
+  //para a posicao ser absoluta no contexto do input block (e não no body) é preciso adicionar o posicionamento relativo no .input-block
+  position: absolute;
+  left: 1.6rem;
+  right: 1.6rem;
+  bottom: 0;
+}

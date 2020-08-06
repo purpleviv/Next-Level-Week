@@ -327,4 +327,20 @@ textarea {
   padding: 0 1.6rem;
   width: 100%;
 }
+
+.input-block {
+  position: relative;
+}
+
+/* css cria o after quando o elemento estiver em foco */
+.input-block:focus-within::after {
+  content: "";
+  background-color: #916bea;
+  height: 2px;
+  width: calc(100% - 3.2rem);
+  position: absolute;
+  left: 1.6rem;
+  right: 1.6rem;
+  bottom: 0;
+}
 /*# sourceMappingURL=style.css.map */
