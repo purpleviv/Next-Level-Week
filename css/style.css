@@ -343,4 +343,111 @@ textarea {
   right: 1.6rem;
   bottom: 0;
 }
+
+/* Estilos do main */
+#page-study main {
+  margin: 3.2rem auto;
+  width: 90%;
+}
+
+.teacher-item {
+  background-color: #ffffff;
+  border: 1px solid #e6e6f0;
+  border-radius: 0.8rem;
+  margin-top: 2.4rem;
+}
+
+.teacher-item header {
+  padding: 3.2rem 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.teacher-item header img {
+  border-radius: 50%;
+  height: 8rem;
+  width: 8rem;
+}
+
+.teacher-item header div {
+  margin-left: 2.4rem;
+}
+
+.teacher-item header div strong {
+  color: #32264d;
+  display: block;
+  font: 700 2.4rem Archivo;
+}
+
+.teacher-item header div span {
+  font-size: 1.6rem;
+  display: block;
+  margin-top: 0.4rem;
+}
+
+.teacher-item p {
+  padding: 0 2rem;
+  font-size: 1.6rem;
+  line-height: 2.8rem;
+}
+
+.teacher-item footer {
+  padding: 3.2rem 2rem;
+  background-color: #fafafc;
+  border-top: 1px solid #e6e6f0;
+  margin-top: 3.2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.teacher-item footer p {
+  font-size: 1.4rem;
+  line-height: 2.4rem;
+  color: #9c98a6;
+}
+
+.teacher-item footer p strong {
+  color: #8257e5;
+  font-size: 1.6rem;
+  display: block;
+}
+
+.teacher-item footer button {
+  width: 20rem;
+  height: 5.6rem;
+  background-color: #04d361;
+  color: #ffffff;
+  border: 0;
+  border-radius: 0.8rem;
+  cursor: pointer;
+  font: 700 1.4rem Archivo;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  text-decoration: none;
+  -webkit-transition: background 0.2s;
+  transition: background 0.2s;
+  margin-left: 1.6rem;
+}
+
+.teacher-item footer button:hover {
+  background-color: #04bf58;
+}
 /*# sourceMappingURL=style.css.map */
