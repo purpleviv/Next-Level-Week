@@ -212,4 +212,119 @@ textarea {
     font-size: 1.2rem;
   }
 }
+
+#page-study #container {
+  height: 100vh;
+  width: 100vw;
+}
+
+.page-header {
+  background-color: #8257e5;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.page-header .top-bar-container {
+  margin: 0 auto;
+  padding: 1.6rem 0;
+  width: 90%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.page-header .top-bar-container a {
+  height: 3.2rem;
+  -webkit-transition: opacity 0.2s;
+  transition: opacity 0.2s;
+}
+
+.page-header .top-bar-container a:hover {
+  opacity: 0.6;
+}
+
+.page-header .top-bar-container img {
+  height: 1.6rem;
+}
+
+.page-header .header-content {
+  margin: 3.2rem auto;
+  width: 90%;
+}
+
+.page-header .header-content strong {
+  color: #ffffff;
+  font: 700 3.6rem Archivo;
+  line-height: 4.2rem;
+}
+
+#search-teachers {
+  margin-top: 3.2rem;
+}
+
+#search-teachers label {
+  color: #d4c2ff;
+}
+
+#search-teachers .select-block {
+  margin-bottom: 1.4rem;
+}
+
+#search-teachers button {
+  background-color: #04d361;
+  border: 0;
+  border-radius: 0.8rem;
+  color: #ffffff;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font: 700 1.6rem Archivo;
+  height: 5.6rem;
+  margin-top: 3.2rem;
+  text-decoration: none;
+  -webkit-transition: background 0.2s;
+  transition: background 0.2s;
+  width: 100%;
+}
+
+#search-teachers button:hover {
+  background-color: #04bf58;
+}
+
+.select-block label,
+.input-block label {
+  font-size: 1.4rem;
+  color: #9c98a6;
+}
+
+.input-block input,
+.select-block select {
+  background-color: #f8f8fc;
+  border: 1px solid #e6e6f0;
+  border-radius: 0.8rem;
+  font: 1.6rem Archivo;
+  height: 5.6rem;
+  margin-top: 0.8rem;
+  outline: 0;
+  padding: 0 1.6rem;
+  width: 100%;
+}
 /*# sourceMappingURL=style.css.map */

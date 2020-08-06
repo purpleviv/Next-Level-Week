@@ -1,0 +1,97 @@
+#page-study #container {
+  height: 100vh;
+  width: 100vw;
+}
+
+.page-header {
+  background-color: $color-primary;
+
+  display: flex; //coloca um conteudo ao lado do outro
+  flex-direction: column;
+}
+
+.page-header .top-bar-container {
+  margin: 0 auto;
+  padding: 1.6rem 0;
+  width: 90%;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.page-header .top-bar-container a {
+  height: 3.2rem;
+  transition: opacity 0.2s;
+}
+
+.page-header .top-bar-container a:hover {
+  opacity: 0.6;
+}
+
+.page-header .top-bar-container img {
+  height: 1.6rem;
+}
+
+.page-header .header-content {
+  margin: 3.2rem auto;
+  width: 90%;
+}
+
+.page-header .header-content strong {
+  color: $color-title-in-primary;
+  font: 700 3.6rem Archivo;
+  line-height: 4.2rem;
+}
+
+#search-teachers {
+  margin-top: 3.2rem;
+}
+
+#search-teachers label {
+  color: $color-text-in-primary;
+}
+
+#search-teachers .select-block {
+  margin-bottom: 1.4rem;
+}
+
+#search-teachers button {
+  background-color: $color-secondary;
+  border: 0;
+  border-radius: 0.8rem;
+  color: $color-button-text;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font: 700 1.6rem Archivo;
+  height: 5.6rem;
+  margin-top: 3.2rem;
+  text-decoration: none;
+  transition: background 0.2s;
+  width: 100%;
+}
+
+#search-teachers button:hover {
+  background-color: $color-secondary-dark;
+}
+
+.select-block label,
+.input-block label {
+  font-size: 1.4rem;
+  color: $color-text-complement;
+}
+
+.input-block input,
+.select-block select {
+  background-color: $color-input-background;
+  border: 1px solid $color-line-in-white;
+  border-radius: 0.8rem;
+  font: 1.6rem Archivo;
+  height: 5.6rem;
+  margin-top: 0.8rem;
+  outline: 0;
+  padding: 0 1.6rem;
+  width: 100%;
+}
