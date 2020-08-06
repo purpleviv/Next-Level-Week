@@ -249,7 +249,7 @@ textarea {
   opacity: 0.6;
 }
 
-.page-header .top-bar-container img {
+.page-header .top-bar-container > img {
   height: 1.6rem;
 }
 
@@ -263,6 +263,14 @@ textarea {
   color: #ffffff;
   font: 700 3.6rem Archivo;
   line-height: 4.2rem;
+}
+
+.page-header .header-content p {
+  max-width: 30rem;
+  font-size: 1.6rem;
+  line-height: 2.6rem;
+  color: #d4c2ff;
+  margin-top: 2.4rem;
 }
 
 @media (min-width: 700px) {
@@ -293,6 +301,51 @@ textarea {
   .page-header .header-content strong {
     max-width: 350px;
   }
+}
+
+.select-block label,
+.input-block label,
+.textarea-block label {
+  font-size: 1.4rem;
+  color: #9c98a6;
+}
+
+.input-block input,
+.select-block select,
+.textarea-block textarea {
+  background-color: #f8f8fc;
+  border: 1px solid #e6e6f0;
+  border-radius: 0.8rem;
+  font: 1.6rem Archivo;
+  height: 5.6rem;
+  margin-top: 0.8rem;
+  outline: 0;
+  padding: 0 1.6rem;
+  width: 100%;
+}
+
+.textarea-block textarea {
+  padding: 1.2rem 1.6rem;
+  height: 16rem;
+  resize: vertical;
+}
+
+.input-block,
+.textarea-block {
+  position: relative;
+}
+
+/* css cria o after quando o elemento estiver em foco */
+.input-block:focus-within::after,
+.textarea-block:focus-within::after {
+  content: "";
+  background-color: #916bea;
+  height: 2px;
+  width: calc(100% - 3.2rem);
+  position: absolute;
+  left: 1.6rem;
+  right: 1.6rem;
+  bottom: 0;
 }
 
 #page-study #container {
@@ -338,41 +391,6 @@ textarea {
 
 #search-teachers button:hover {
   background-color: #04bf58;
-}
-
-.select-block label,
-.input-block label {
-  font-size: 1.4rem;
-  color: #9c98a6;
-}
-
-.input-block input,
-.select-block select {
-  background-color: #f8f8fc;
-  border: 1px solid #e6e6f0;
-  border-radius: 0.8rem;
-  font: 1.6rem Archivo;
-  height: 5.6rem;
-  margin-top: 0.8rem;
-  outline: 0;
-  padding: 0 1.6rem;
-  width: 100%;
-}
-
-.input-block {
-  position: relative;
-}
-
-/* css cria o after quando o elemento estiver em foco */
-.input-block:focus-within::after {
-  content: "";
-  background-color: #916bea;
-  height: 2px;
-  width: calc(100% - 3.2rem);
-  position: absolute;
-  left: 1.6rem;
-  right: 1.6rem;
-  bottom: 0;
 }
 
 /* Estilos do main */
@@ -550,6 +568,85 @@ textarea {
   }
   .teacher-item footer button img {
     margin-right: 16px;
+  }
+}
+
+#page-give-classes #container {
+  height: 100vh;
+  width: 100vw;
+}
+
+#page-give-classes .page-header .header-content {
+  margin-bottom: 6.4rem;
+}
+
+#page-give-classes main {
+  background-color: #ffffff;
+  width: 100%;
+  max-width: 74rem;
+  border-radius: 0.8rem;
+  margin: -3.2rem auto 3.2rem;
+  padding-top: 6.4rem;
+}
+
+#page-give-classes fieldset {
+  border: none;
+  padding: 0 2.4rem;
+}
+
+#page-give-classes fieldset legend {
+  font: 700 2.4rem Archivo;
+  color: #32264d;
+  margin-bottom: 2.4rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  padding-bottom: 1.6rem;
+  border-bottom: 1px solid #e6e6f0;
+}
+
+#page-give-classes fieldset legend button {
+  background: none;
+  border: 0;
+  color: #8257e5;
+  font: 700 1.6rem Archivo;
+  cursor: pointer;
+  -webkit-transition: 0.2;
+  transition: 0.2;
+}
+
+#page-give-classes fieldset legend button:hover {
+  /* transform: translateY(-5px); */
+  color: #774dd6;
+}
+
+#page-give-classes fieldset + fieldset {
+  margin-top: 4.6rem;
+}
+
+#page-give-classes .input-block + .input-block,
+#page-give-classes .input-block + .textarea-block,
+#page-give-classes .select-block + .input-block {
+  margin-top: 2.4rem;
+}
+
+#page-give-classes main footer {
+  padding: 4rem 2.4rem;
+  background: #fafafc;
+  border-top: 1px solid #e6e6f0;
+  margin-top: 6.4rem;
+}
+
+@media (min-width: 700px) {
+  #page-give-classes #container {
+    max-width: 100vw;
   }
 }
 /*# sourceMappingURL=style.css.map */

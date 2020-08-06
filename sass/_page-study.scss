@@ -36,41 +36,6 @@
   background-color: $color-secondary-dark;
 }
 
-.select-block label,
-.input-block label {
-  font-size: 1.4rem;
-  color: $color-text-complement;
-}
-
-.input-block input,
-.select-block select {
-  background-color: $color-input-background;
-  border: 1px solid $color-line-in-white;
-  border-radius: 0.8rem;
-  font: 1.6rem Archivo;
-  height: 5.6rem;
-  margin-top: 0.8rem;
-  outline: 0;
-  padding: 0 1.6rem;
-  width: 100%;
-}
-
-.input-block {
-  position: relative;
-}
-/* css cria o after quando o elemento estiver em foco */
-.input-block:focus-within::after {
-  content: "";
-  background-color: $color-primary-light;
-  height: 2px;
-  width: calc(100% - 3.2rem);
-  //para a posicao ser absoluta no contexto do input block (e não no body) é preciso adicionar o posicionamento relativo no .input-block
-  position: absolute;
-  left: 1.6rem;
-  right: 1.6rem;
-  bottom: 0;
-}
-
 /* Estilos do main */
 #page-study main {
   margin: 3.2rem auto;
