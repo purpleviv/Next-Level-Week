@@ -2,7 +2,7 @@
 Desenvolvimento da plataforma Proffy na Next Level Week #2
 
 <p align="center">
-  <img src="img/landing.svg">
+  <img src="public/img/landing.svg">
 </p>
 
 > Status do Projeto: Em andamento :construction:
