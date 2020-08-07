@@ -52,6 +52,11 @@ const weekdays = [
 ];
 
 /* Funcionalidades */
+function getSubject(subjectNumber) {
+  const position = +subjectNumber - 1;
+  return subjects[position];
+}
+
 function pageLanding(req, res) {
   return res.render("index.html");
 }
@@ -68,6 +73,7 @@ function pageGiveClasses(req, res) {
   // keys transforma as chaves de data (nome, bio, avatar...) em um array
 
   if (isNotEmpty) {
+    data.subject = getSubject(data.subject);
     // adicionar  a lista de proffys
     proffys.push(data);
 
