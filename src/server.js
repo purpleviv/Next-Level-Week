@@ -62,6 +62,18 @@ function pageStudy(req, res) {
 }
 
 function pageGiveClasses(req, res) {
+  // Receber dados do formulario e adicionar ao proffys
+  const data = req.query;
+  const isNotEmpty = Object.keys(data).length > 0;
+  // keys transforma as chaves de data (nome, bio, avatar...) em um array
+
+  if (isNotEmpty) {
+    // adicionar  a lista de proffys
+    proffys.push(data);
+
+    return res.redirect("/study");
+  }
+  // se não, mostrar a página
   return res.render("give-classes.html", { subjects, weekdays });
 }
 
