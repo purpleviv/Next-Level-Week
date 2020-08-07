@@ -38,8 +38,8 @@ const subjects = [
   "História",
   "Matemática",
   "Português",
-  "Química",
-]
+  "Química"
+];
 
 const weekdays = [
   "Domingo",
@@ -48,8 +48,8 @@ const weekdays = [
   "Quarta-feira",
   "Quinta-feira",
   "Sexta-feira",
-  "Sábado",
-]
+  "Sábado"
+];
 
 /* Funcionalidades */
 function pageLanding(req, res) {
@@ -57,12 +57,12 @@ function pageLanding(req, res) {
 }
 
 function pageStudy(req, res) {
-  const filters = req.query
+  const filters = req.query;
   return res.render("study.html", { proffys, filters, subjects, weekdays });
 }
 
 function pageGiveClasses(req, res) {
-  return res.render("give-classes.html");
+  return res.render("give-classes.html", { subjects, weekdays });
 }
 
 /* Servidor */
