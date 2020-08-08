@@ -1,7 +1,7 @@
 /* Dados */
 const proffys = [
   {
-    name: "Diega Fernanda",
+    name: "Diego Fernandes",
     avatar:
       "https://avatars2.githubusercontent.com/u/2254731?=s460&amp;u=0ba16a79456c2f250e7579cb388fa18c5c2d7d65&amp;v=4",
     whatsapp: "89987654534",
