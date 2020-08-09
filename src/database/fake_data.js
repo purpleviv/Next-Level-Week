@@ -27,3 +27,13 @@ const proffys = [
     time_to: [1220]
   }
 ];
+
+/* 
+Matemática
+Segunda, Quarta, Sexta
+8h - 10h
+
+Física
+Segunda, Sexta
+9h - 11h
+*/
