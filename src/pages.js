@@ -13,7 +13,7 @@ function pageLanding(req, res) {
 
 async function pageStudy(req, res) {
   const filters = req.query;
-
+  console.log(filters.weekday);
   if (!filters.subject || !filters.weekday || !filters.time) {
     return res.render("study.html", { filters, subjects, weekdays });
   }
@@ -27,13 +27,13 @@ async function pageStudy(req, res) {
     WHERE EXISTS (
       SELECT class_schedule.*
       FROM class_schedule
-      WHERE class_schedule.class_id = classes.id 
-      AND class_schedule.weekday = '${filters.weekdays}'
+      WHERE class_schedule.class_id = classes.id
+      AND class_schedule.weekday = '${filters.weekday}'
       AND class_schedule.time_from <= '${timeToMinutes}'
       AND class_schedule.time_to > '${timeToMinutes}'
-    )
-    AND classes.subject = '${filters.subject}'
-  `;
+      AND classes.subject = '${filters.subject}');
+    `;
+
   // caso haja erro na hora da consulta no db
   try {
     const db = await Database;
@@ -80,9 +80,12 @@ async function saveClasses(req, res) {
   try {
     const db = await Database;
     await createProffy(db, { proffyValue, classValue, classScheduleValues });
-    let queryString = "?subject" + req.body.subject;
+
+    let queryString = "?subject=" + req.body.subject;
+
     queryString += "&weekday=" + req.body.weekday[0];
     queryString += "&time=" + req.body.time_from[0];
+
     return res.redirect("/study" + queryString);
   } catch (error) {
     console.log(error);

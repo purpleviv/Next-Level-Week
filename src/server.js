@@ -16,17 +16,17 @@ nunjucks.configure("src/views", {
   noCache: true
 });
 
-server // configurar arquivos estáticos (css, scripts, imagens)
-  // receber os dados do req.body
-  .use(express.urlencoded({ extended: true }))
-  .use(express.static("public"))
+// configurar arquivos estáticos (css, scripts, imagens)
+// receber os dados do req.body
+server.use(express.urlencoded({ extended: true }));
+server.use(express.static("public"));
 
-  // rotas da aplicação
-  .get("/", pageLanding)
-  .get("/study", pageStudy)
-  .get("/give-classes", pageGiveClasses)
-  .post("/save-classes", saveClasses)
-  // start do servidor
-  .listen(5300);
+// rotas da aplicação
+server.get("/", pageLanding);
+server.get("/study", pageStudy);
+server.get("/give-classes", pageGiveClasses);
+server.post("/save-classes", saveClasses);
+// start do servidor
+server.listen(5300);
 // Para mostrar o valor de __dirname
 // console.log(__dirname)
